@@ -4,37 +4,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <!-- <meta http-equiv="refresh" content="5"> -->
-  <title>Home | barebones</title>
+  <title>Home | BaKoCraft</title>
   
   <link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
 
   <body>
     <header>
-  <h1 class="logo">BaKoCraft</h1>
+  <h1 class="logo grow">BaKoCraft</h1>
+  <h2 class="ip">IP &nbsp;<span id="autoselect">85.114.139.8:27031</span></h2>
 </header>
 
-    <nav>
+    <div class="container">
+      <nav>
   <ul>
-    <li><a href="/home/">Home</a></li>
-    <li><a href="/info/">Info</a></li>
-    <li><a href="/nieuws/">Nieuws</a></li>
-    <li><a href="/kit-pvp/">Kit PVP</a></li>
-    <li><a href="/ranks/">Ranks</a></li>
-    <li><a href="/contact/">Contact</a></li>
+    <li><a href="/index/"><i class="fa fa-fw fa-home" aria-hidden="true"></i> Home</a></li>
+    <li><a href="/info/"><i class="fa fa-fw fa-info-circle" aria-hidden="true"></i> Info</a></li>
+    <li><a href="/nieuws/"><i class="fa fa-fw fa-newspaper-o" aria-hidden="true"></i> Nieuws</a></li>
+    <li><a href="/kit-pvp/"><i class="fa fa-fw fa-shield" aria-hidden="true"></i> Kit PVP</a></li>
+    <li><a href="/ranks/"><i class="fa fa-fw fa-diamond" aria-hidden="true"></i> Ranks</a></li>
+    <li><a href="/contact/"><i class="fa fa-fw fa-comments" aria-hidden="true"></i> Contact</a></li>
   </ul>
 </nav>
 
-    <main>
-      <h1>INDEX</h1>
-<h2>Lorem</h2>
-<h3>Lorem</h3>
-<h4>Lorem</h4>
-<small>Lorem</small>
-<p>Lorem</p>
-
-
-
+      <main>
+        
   <section class="post">
     <p class="content-preview"><h1 id="test-testy">Test, testy</h1>
 <p>honden eten</p>
@@ -51,11 +45,35 @@
   </section>
 
 
-    </main>
+      </main>
+    </div>
     <footer>
-  <h1>FOOTER</h1>
-  <h3>BAREBONES</h3>
 </footer>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  function SelectText(element) {
+      var doc = document,
+          text = doc.getElementById(element),
+          range,
+          selection;
+      if (doc.body.createTextRange) {
+          range = document.body.createTextRange();
+          range.moveToElementText(text);
+          range.select();
+      } else if (window.getSelection) {
+          selection = window.getSelection();
+          range = document.createRange();
+          range.selectNodeContents(text);
+          selection.removeAllRanges();
+          selection.addRange(range);
+      }
+  }
+  $(function() {
+      $('span').click(function () {
+          SelectText('autoselect');
+      });
+  });
+</script>
 
   </body>
 </html>

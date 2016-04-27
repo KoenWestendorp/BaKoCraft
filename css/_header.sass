@@ -1,4 +1,21 @@
 header
+  display: flex
+  align-items: baseline
+  justify-content: space-between
   width: 100%
   color: $white
   background: $brandcolor
+
+  h1.logo
+    color: inherit
+    margin-left: 1em
+
+  h2.ip
+    margin-right: 1em
+    color: transparentize($dark, 0.6)
+    transition: all .2s ease-in-out
+    span
+      color: transparentize($dark, 0.3)
+
+  &:hover + h2.ip
+    opacity: 0.5

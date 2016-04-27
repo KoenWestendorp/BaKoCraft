@@ -1,4 +1,27 @@
 <footer>
-  <h1>FOOTER</h1>
-  <h3>BAREBONES</h3>
 </footer>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  function SelectText(element) {
+      var doc = document,
+          text = doc.getElementById(element),
+          range,
+          selection;
+      if (doc.body.createTextRange) {
+          range = document.body.createTextRange();
+          range.moveToElementText(text);
+          range.select();
+      } else if (window.getSelection) {
+          selection = window.getSelection();
+          range = document.createRange();
+          range.selectNodeContents(text);
+          selection.removeAllRanges();
+          selection.addRange(range);
+      }
+  }
+  $(function() {
+      $('span').click(function () {
+          SelectText('autoselect');
+      });
+  });
+</script>
