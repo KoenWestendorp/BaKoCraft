@@ -1,0 +1,75 @@
+@import url(https://necolas.github.io/normalize.css/latest/normalize.css);
+.gigantic, .huge, .large, .bigger, .big,
+h1, h2, h3, h4, h5, h6 {
+  color: #2c3e50;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.gigantic {
+  font-size: 3em; }
+
+.huge, h1 {
+  font-size: 2em; }
+
+.large, h2 {
+  font-size: 1.5em; }
+
+.bigger, h3 {
+  font-size: 1.17em; }
+
+.big, h4 {
+  font-size: 1em; }
+
+.small, small {
+  font-size: smaller; }
+
+p {
+  margin: 0 0 20px 0;
+  font-size: 1em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
+
+a {
+  color: #2EC4B6;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+hr {
+  border: solid #95a5a6;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 10px 0 30px;
+  height: 0; }
+
+header {
+  width: 100%;
+  color: #ecf0f1;
+  background: #2EC4B6; }
+
+footer {
+  width: 100%;
+  color: #ecf0f1;
+  background: #34495e; }
+
+/*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ** */
+html {
+  background-color: #ecf0f1;
+  height: 2000px; }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #2c3e50;
+  -webkit-font-smoothing: antialiased; }
+
+.cf:before, .cf:after {
+  content: "";
+  display: table; }
+
+.cf:after {
+  clear: both; }
