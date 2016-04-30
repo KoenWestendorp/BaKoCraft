@@ -64,9 +64,14 @@ header {
   width: 100%;
   color: #f7ffff;
   background: #7fb336; }
-  header h1.logo {
-    color: inherit;
-    margin-left: 1em; }
+  header a {
+    color: inherit; }
+    header a:hover {
+      text-decoration: none;
+      opacity: 0.9; }
+    header a h1.logo {
+      color: inherit;
+      margin-left: 1em; }
   header h2.ip {
     margin-right: 1em;
     color: rgba(21, 49, 49, 0.4);
@@ -127,6 +132,9 @@ body,
     flex: 0 0 10em; } }
 main .container {
   display: flex; }
+  main .container section.post {
+    height: 100em;
+    background: red; }
 
 /*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ** */
 html {
@@ -145,3 +153,6 @@ body {
 
 .cf:after {
   clear: both; }
+
+main {
+  margin: 0.5em 2em; }
