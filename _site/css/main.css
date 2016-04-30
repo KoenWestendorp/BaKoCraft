@@ -55,7 +55,7 @@ hr {
     transform: scale(1.05); }
 
 .fade {
-  transition: all 0.2s ease-in-out; }
+  transition: all 0.1s ease-in-out; }
 
 header {
   display: flex;
@@ -125,6 +125,9 @@ body,
 
   nav {
     flex: 0 0 10em; } }
+main .container {
+  display: flex; }
+
 /*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ** */
 html {
   background-color: #f7ffff;

@@ -1,9 +1,10 @@
 ---
 layout: post
-categories: news, kit-pvp
+categories: news
 published: true
 title: Kit PVP
 image: /img/kit-pvp.jpg
+tags: kit-pvp, news, map
 ---
 
 # {{ page.title }}
