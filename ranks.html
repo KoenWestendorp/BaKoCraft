@@ -7,3 +7,18 @@ tabtitle: Ranks
 ---
 
 <h1>Ranks</h1>
+
+{% for post in site.posts %}
+  {% if post.catagories == ranks %}
+  <section class="post">
+    <p class="content-preview">{{ post.content | truncatewords: 50 }}</p>
+    <p class="date">{{ post.date | date: '%B %d, %Y' }}</p><a class="learnmore" href="{{ post.url }}">Learn more...</a>
+    <img class="image" src="{{ post.image }}">]
+    <div class="tags">
+      {% for tag in post.tags %}
+        <p class="tag"> {{ tag }} </p>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+{% endfor %}

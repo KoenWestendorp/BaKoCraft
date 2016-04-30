@@ -8,8 +8,8 @@ tabtitle: Home
 
 <h1>Home</h1>
 
-{% for post in site.post %}
-  {% if post.catagories == "news" %}
+{% for post in site.posts %}
+  {% if post.catagories == news %}
   <section class="post">
     <p class="content-preview">{{ post.content | truncatewords: 50 }}</p>
     <p class="date">{{ post.date | date: '%B %d, %Y' }}</p><a class="learnmore" href="{{ post.url }}">Learn more...</a>

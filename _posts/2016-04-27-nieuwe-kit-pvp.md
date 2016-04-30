@@ -8,6 +8,7 @@ tags: kit-pvp, news, map
 ---
 
 # {{ page.title }}
+
 ## Kit PvP komt binnen kort op de BaKoCraft server!
 De staff van de server is op dit moment bezig met het maken van Kit PvP. Het thema van de map wordt D-Day op Point Du Huc. De map is bijna af maar er moeten nog heel wat dingen met plugins gedaan worden...
 
